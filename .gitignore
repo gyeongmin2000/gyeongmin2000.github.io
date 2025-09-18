@@ -1,0 +1,14 @@
+# .gitignore
+
+# Hugo build output
+/public/
+
+# Build lock file
+.hugo_build.lock
+
+# OS-generated files
+.DS_Store
+
+# Automation scripts secrets and dependencies
+/scripts/.env
+/scripts/node_modules

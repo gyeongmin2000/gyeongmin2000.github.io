@@ -1,0 +1,46 @@
+baseURL = "https://example.com/" # 나중에 Netlify 주소로 변경
+languageCode = "ko"
+title = "나의 개발 블로그"
+theme = "PaperMod"
+
+[params]
+  defaultTheme = "dark" # "light" 또는 "auto"
+
+defaultContentLanguage = "ko" # 기본 언어 설정
+
+[languages]
+  [languages.ko]
+    languageName = "Korean"
+    weight = 1
+    title = "나의 개발 블로그"
+    [languages.ko.params]
+      homeInfoParams = { content = "안녕하세요! 기술과 경험을 공유하는 공간입니다." }
+    [languages.ko.menu]
+      [[languages.ko.menu.main]]
+        identifier = "posts"
+        name = "글 목록"
+        url = "/posts/"
+        weight = 10
+      [[languages.ko.menu.main]]
+        identifier = "tags"
+        name = "태그"
+        url = "/tags/"
+        weight = 20
+
+  [languages.ja]
+    languageName = "Japanese"
+    weight = 2
+    title = "私の開発ブログ"
+    [languages.ja.params]
+      homeInfoParams = { content = "こんにちは！技術と経験を共有するスペースです。" }
+    [languages.ja.menu]
+      [[languages.ja.menu.main]]
+        identifier = "posts"
+        name = "投稿一覧"
+        url = "/posts/"
+        weight = 10
+      [[languages.ja.menu.main]]
+        identifier = "tags"
+        name = "タグ"
+        url = "/tags/"
+        weight = 20
