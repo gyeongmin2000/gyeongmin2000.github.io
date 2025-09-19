@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@google/generative-ai": "^0.24.1",
     "@notionhq/client": "^5.1.0",
     "dotenv": "^17.2.2",
     "notion-to-md": "^3.1.9"

@@ -1,8 +1,0 @@
-# netlify.toml
-
-[build]
-  command = "hugo"
-  publish = "public"
-
-[build.environment]
-  HUGO_VERSION = "0.125.4" # 원하는 Hugo 버전을 지정할 수 있습니다.
