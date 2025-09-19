@@ -31,7 +31,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.125.4'
+          hugo-version: 'latest'
           extended: true
 
       # 3. Hugo를 사용해 웹사이트를 빌드합니다.
