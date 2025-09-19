@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://gyeongmin2000.github.io/tags/automation/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://gyeongmin2000.github.io/ja/tags/automation/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://gyeongmin2000.github.io/tags/automation/"
+                />
+  </url><url>
     <loc>https://gyeongmin2000.github.io/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -13,6 +25,20 @@
                 hreflang="ko"
                 href="https://gyeongmin2000.github.io/categories/"
                 />
+  </url><url>
+    <loc>https://gyeongmin2000.github.io/tags/hugo/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://gyeongmin2000.github.io/ja/tags/hugo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://gyeongmin2000.github.io/tags/hugo/"
+                />
+  </url><url>
+    <loc>https://gyeongmin2000.github.io/ko/</loc>
   </url><url>
     <loc>https://gyeongmin2000.github.io/tags/</loc>
     <xhtml:link
@@ -26,6 +52,18 @@
                 href="https://gyeongmin2000.github.io/tags/"
                 />
   </url><url>
+    <loc>https://gyeongmin2000.github.io/tags/test/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://gyeongmin2000.github.io/ja/tags/test/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://gyeongmin2000.github.io/tags/test/"
+                />
+  </url><url>
     <loc>https://gyeongmin2000.github.io/</loc>
     <xhtml:link
                 rel="alternate"
@@ -37,5 +75,7 @@
                 hreflang="ko"
                 href="https://gyeongmin2000.github.io/"
                 />
+  </url><url>
+    <loc>https://gyeongmin2000.github.io/ko/posts/my-first-automated-post/</loc>
   </url>
 </urlset>
