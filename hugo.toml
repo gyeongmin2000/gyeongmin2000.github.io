@@ -5,10 +5,10 @@ languageCode = "ko"
 title = "나의 개발 블로그"
 theme = "PaperMod"
 
+defaultContentLanguage = "ko" # 기본 언어 설정
+
 [params]
   defaultTheme = "dark"
-
-defaultContentLanguage = "ko" # 기본 언어 설정
 
 [languages]
   [languages.ko]
