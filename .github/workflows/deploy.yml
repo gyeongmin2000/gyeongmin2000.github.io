@@ -1,0 +1,50 @@
+
+name: Deploy Hugo site to GitHub Pages
+
+on:
+  # main 브랜치에 새로운 코드가 push되었을 때 자동 실행됩니다.
+  push:
+    branches:
+      - main
+
+  # 수동 실행 버튼을 추가합니다.
+  workflow_dispatch:
+
+# GitHub Pages에 배포할 권한을 설정합니다.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. 저장소 코드를 불러옵니다. (submodule 포함)
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      # 2. Hugo 환경을 설정합니다.
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.125.4'
+          extended: true
+
+      # 3. Hugo를 사용해 웹사이트를 빌드합니다.
+      - name: Build
+        run: hugo
+
+      # 4. GitHub Pages에 배포합니다.
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          # 배포는 개인용 액세스 토큰(PAT) 대신 자동으로 생성되는 GITHUB_TOKEN을 사용합니다.
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # 배포할 브랜치를 지정합니다 (예: gh-pages)
+          publish_branch: gh-pages
+          # 빌드 결과물이 있는 폴더를 지정합니다 (Hugo 기본값은 public)
+          publish_dir: ./public
