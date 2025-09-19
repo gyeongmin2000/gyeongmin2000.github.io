@@ -26,6 +26,8 @@
                 href="https://gyeongmin2000.github.io/categories/"
                 />
   </url><url>
+    <loc>https://gyeongmin2000.github.io/tags/github/</loc>
+  </url><url>
     <loc>https://gyeongmin2000.github.io/tags/hugo/</loc>
     <xhtml:link
                 rel="alternate"
@@ -63,6 +65,8 @@
                 hreflang="ko"
                 href="https://gyeongmin2000.github.io/tags/test/"
                 />
+  </url><url>
+    <loc>https://gyeongmin2000.github.io/ko/posts/action-test/</loc>
   </url><url>
     <loc>https://gyeongmin2000.github.io/</loc>
     <xhtml:link

@@ -2,6 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://gyeongmin2000.github.io/ja/ja/posts/action-test/</loc>
+  </url><url>
     <loc>https://gyeongmin2000.github.io/ja/tags/automation/</loc>
     <xhtml:link
                 rel="alternate"
