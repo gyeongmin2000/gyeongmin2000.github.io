@@ -12,7 +12,7 @@ on:
 
 # GitHub Pages에 배포할 권한을 설정합니다.
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
