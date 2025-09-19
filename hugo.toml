@@ -1,6 +1,6 @@
 # hugo.toml
 
-baseURL = "https://gyeongmin2000.github.io/my-blog/"
+baseURL = "https://gyeongmin2000.github.io/"
 languageCode = "ko"
 title = "나의 개발 블로그"
 theme = "PaperMod"
