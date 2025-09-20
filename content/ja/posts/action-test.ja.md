@@ -1,6 +1,5 @@
-```markdown
 ---
-title: "GitHub Actions のテスト"
+title: "GitHub Actionsテスト"
 date: 
 tags: ["Test", "github"]
 ---
@@ -9,7 +8,6 @@ GitHubテスト
 
 
 ```python
-#테스트
+#テスト
 test
-```
 ```
