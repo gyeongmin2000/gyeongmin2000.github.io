@@ -4,12 +4,14 @@ date:
 tags: ["Test", "Hugo", "Automation"]
 ---
 
-# 見出し1
+# タイトル1
 
 
-## 見出し2
+## タイトル2
 
 - リスト
+
+
 
 ```python
 코드 블록

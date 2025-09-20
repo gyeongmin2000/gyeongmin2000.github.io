@@ -4,7 +4,6 @@ date:
 tags: ["Test", "Hugo", "Automation"]
 ---
 
-
 # 제목1
 
 
@@ -19,4 +18,3 @@ print("hello, world")
 
 
 https://www.google.com
-
