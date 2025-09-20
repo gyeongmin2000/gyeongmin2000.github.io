@@ -34,10 +34,6 @@ jobs:
       - name: Create image directory
         run: mkdir -p ./static/images/posts
 
-      - name: Run publish script
-        run: node ./scripts/publish.js
-        env:
-
       # 4. Notion에서 글을 가져와 마크다운으로 변환하고 번역하는 스크립트를 실행합니다.
       - name: Run publish script
         run: node ./scripts/publish.js
@@ -51,7 +47,7 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add ./content/
+          git add .
           # 변경 사항이 있을 때만 커밋하도록 설정
           if ! git diff --staged --quiet; then
             git commit -m "feat: Add new posts from Notion by GitHub Actions"
