@@ -118,21 +118,21 @@ async function translateSimpleText(text, targetLang = 'Japanese') {
  * @param {string} body - 번역할 마크다운 본문
  * @returns {Promise<string>} 번역된 마크다운 본문
  */
+
 async function translateBody(body) {
   // 정규식을 사용해 코드 블록(```)과 인라인 코드(`)를 모두 찾음
   const regex = /(```[\s\S]*?```|`[^`]+`)/g;
-  // 본문을 일반 텍스트와 코드 조각으로 분리하여 배열로 만듦
-  const parts = body.split(regex).filter(Boolean); // filter(Boolean)은 빈 문자열을 제거
+  // 본문을 텍스트와 코드 조각으로 분리 (split의 구분자도 배열에 포함시키도록 수정)
+  const parts = body.split(regex).filter(Boolean);
 
   const translatedParts = [];
 
-  // 분리된 각 조각을 순회
   for (const part of parts) {
     // 현재 조각이 코드인지 확인
-    if (part.match(regex)) {
+    if (regex.test(part)) {
       // 코드이면 번역하지 않고 그대로 추가
       translatedParts.push(part);
-    } else if (part.trim() !== '') { // 공백만 있는 조각은 번역하지 않음
+    } else if (part.trim() !== '') {
       // 코드가 아닌 일반 텍스트이면 번역 수행
       const prompt = `Translate the following Korean text fragment to Japanese. Respond with only the translated text, nothing else.\n\nKorean: "${part}"`;
       try {
@@ -141,13 +141,18 @@ async function translateBody(body) {
         if (translated.startsWith('"') && translated.endsWith('"')) {
           translated = translated.substring(1, translated.length - 1);
         }
-        translatedParts.push(translated);
+        // 원본의 앞뒤 공백을 최대한 유지하기 위해, 번역 결과 앞뒤에 원본 공백을 붙여줌
+        const leadingSpace = part.match(/^\s*/)[0];
+        const trailingSpace = part.match(/\s*$/)[0];
+        translatedParts.push(leadingSpace + translated + trailingSpace);
+
       } catch (error) {
         console.error(`💥 Gemini API 본문 번역 중 오류 발생 (Fragment: ${part}):`, error);
         translatedParts.push(part); // 번역 실패 시 원본 조각 사용
       }
     } else {
-        translatedParts.push(part); // 공백은 그대로 유지
+        // 공백만 있는 조각은 그대로 유지
+        translatedParts.push(part);
     }
   }
 
