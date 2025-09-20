@@ -2,8 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://gyeongmin2000.github.io/ja/ja/posts/action-test/</loc>
-  </url><url>
     <loc>https://gyeongmin2000.github.io/ja/tags/automation/</loc>
     <xhtml:link
                 rel="alternate"
@@ -27,6 +25,20 @@
                 hreflang="ja"
                 href="https://gyeongmin2000.github.io/ja/categories/"
                 />
+  </url><url>
+    <loc>https://gyeongmin2000.github.io/ja/tags/github/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://gyeongmin2000.github.io/tags/github/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://gyeongmin2000.github.io/ja/tags/github/"
+                />
+  </url><url>
+    <loc>https://gyeongmin2000.github.io/ja/ja/posts/action-test/</loc>
   </url><url>
     <loc>https://gyeongmin2000.github.io/ja/tags/hugo/</loc>
     <xhtml:link

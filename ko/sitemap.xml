@@ -27,6 +27,16 @@
                 />
   </url><url>
     <loc>https://gyeongmin2000.github.io/tags/github/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://gyeongmin2000.github.io/ja/tags/github/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://gyeongmin2000.github.io/tags/github/"
+                />
   </url><url>
     <loc>https://gyeongmin2000.github.io/tags/hugo/</loc>
     <xhtml:link
