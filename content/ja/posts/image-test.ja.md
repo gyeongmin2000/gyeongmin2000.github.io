@@ -16,9 +16,6 @@ tags: ["Test", "Automation"]
 テスト
 
 
-テスト
-
-
-```plain text
-テスト
+テスト```plain text
+테스트
 ```
