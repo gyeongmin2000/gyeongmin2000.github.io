@@ -31,6 +31,13 @@ jobs:
       - name: Install dependencies
         run: npm --prefix ./scripts install
 
+      - name: Create image directory
+        run: mkdir -p ./static/images/posts
+
+      - name: Run publish script
+        run: node ./scripts/publish.js
+        env:
+
       # 4. Notion에서 글을 가져와 마크다운으로 변환하고 번역하는 스크립트를 실행합니다.
       - name: Run publish script
         run: node ./scripts/publish.js
